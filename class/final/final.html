@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Document</title>
+    <script src = "./final.js"></script>
+    <link href="./final.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class = title>코드캠프 회원가입
+            <div class="menu">
+                <input type = "text" id = "email" placeholder="이메일을 입력해 주세요."><br>
+                <input type = "text" id = "name" placeholder="이름을 입력해 주세요."><br>
+                <input type = "text" id = "password" placeholder="비밀번호를 입력해 주세요."><br>
+                <input type = "text" id = "passwordRe" placeholder="비밀번호를 다시 입력해 주세요."><br>
+            </div>
+            <!-- ---------------------------------- -->
+            <!-- 핸드폰 -->
+                <input id = "phone1" type = "text" oninput="changeFocus1()" maxlength="3">-
+                <input id = "phone2" type = "text" oninput="changeFocus2()" maxlength="4">-
+                <input id = "phone3" type = "text" oninput="" maxlength="4">
+            
+            <!-- ------------------------------- -->
+            <!-- 인증 -->
+            <div id = "auth">00000</div>
+            <button onclick = "token()">인증번호 생성</button>
+            <div id = "countdown">3:00</div>
+            <button id = "finish">인증완료</button>
+            
+            <!-- -----------------------------------지역 -->
+            <div>지역모름<br>
+            <!-- ---------------------------체크박스 -->
+            <input type="checkbox">여성  
+            <input type="checkbox">남성<hr>
+            <!-- --------------------------------가입하기 -->
+            <button>가입하기</button>
+    </div>
+    </input>
+</body>
+</html>
